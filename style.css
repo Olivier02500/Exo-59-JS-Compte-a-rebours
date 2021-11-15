@@ -1,0 +1,39 @@
+
+#clock {
+    width: 20%;
+    height: 250px;
+    border: 3px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#needle {
+    width: 1px;
+    height: 48%;
+    border: 3px solid black;
+    border-radius: 15%;
+    display: flex;
+    animation-name: mouve;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    transform-origin: bottom;
+}
+
+#time {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 7%;
+}
+
+@keyframes mouve {
+    to {
+        transform: rotate(0deg);
+    }
+
+    from {
+        transform: rotate(360deg);
+    }
+}
